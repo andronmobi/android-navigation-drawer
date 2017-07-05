@@ -4,33 +4,26 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
-        android:id="@+id/rl_fragment1"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/tv_fragment_one"
+            android:id="@+id/tv_fragment_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="Fragment #1" />
+            android:text="Fragment #3" />
+
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_menu_camera"
-            android:layout_toLeftOf="@id/tv_fragment_one"
+            android:src="@drawable/ic_menu_gallery"
+            android:layout_toLeftOf="@id/tv_fragment_three"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"/>
 
-        <Button
-            android:id="@+id/btn_fragment_one"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:text="Open Fragment #2"
-            android:layout_alignParentBottom="true"/>
     </RelativeLayout>
 
 </FrameLayout>
