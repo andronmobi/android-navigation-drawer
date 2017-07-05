@@ -1,18 +1,15 @@
 package com.andronblog.navigationdrawer.fragment;
 
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
 import com.andronblog.navigationdrawer.R;
 
-public class FragmentThree extends Fragment {
+public class FragmentThree extends NavFragment {
 
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_three, container, false);
+    protected int getLayoutResId() {
+        return R.layout.fragment_three;
+    }
+
+    public String getName() {
+        return getResources().getString(R.string.fragment3);
     }
 }
